@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <!--cấu trúc JS-->
+            <!--Poppins for titles-->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+            <!--Poppins for paragraph-->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+            <!--Linking the CSS-->
+                <link href="style.css" rel="stylesheet">
+            <!--Title-->
+                <title>SAMPVIET.NET | Community</title>
+                <meta name="description" content="SAMPVIET.NET | Community" />
+            <!--Favicon-->
+                <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/1131139621531688981/1213135497757720676/received_434651052232815.jpg?ex=65fd99f9&is=65eb24f9&hm=2bfb1fa652d1db7a5343046324237f5d2213a22acb86dc8303e2a591067319c9&=&format=webp&width=662&height=662">
+    </head>
+</html>
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"></pre></body></html>
+
+<html lang="en">
+    <head>
+        <meta charshet="utf-8" />
+    </head>
+    <body>
+        </p>Có lỗi Gì Liên Hệ 2 Admin này nhé.</p>
+    </body>
+</html>
+
+    <html>
+        <head>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <a href="https://www.facebook.com/boezmusic2000">Bấm vào dây để Liên Hệ admin Nguyễn Nhật Minh</a>
+            <br><br>
+        </body>
+    </html>
+
+<html>
+     <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="https://www.facebook.com/phihung101">Bấm vào dây để Liên Hệ admin Nguyễn Phi Hùng</a>
+    </body>
+</html>
+
+<body>
+    </p>IP server và port là: </q>
+<center></center>
+    <abbr>sampviet.net:7777</abbr>
+    <button onclick="copy('sampviet.net')">Copy IP server</button>
+<script>
+function copy(text) {
+  document.body.insertAdjacentHTML("beforeend","<div id=\"copy\" contenteditable>"+text+"</div>")
+  document.getElementById("copy").focus();
+  document.execCommand("selectAll");
+  document.execCommand("copy");
+  document.getElementById("copy").remove();
+}
+</script>      
+<menu></menu>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="https://dsc.gg/sampviet">Bấm vào dây để vào Discord</a>
+        <br><br>
+        <a href="https://www.facebook.com%22%3E/<img src="http://webcoban.vn/image/sumo.jpg"></a>
+    </body>
+</html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="https://www.fb.com/groups/sampviet.net/">Bấm vào dây để vào Group</a>
+        <br><br>
+        <a href="https://www.facebook.com%22%3E/<img src="http://webcoban.vn/image/sumo.jpg"></a>
+    </body>
+</html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="https://www.fb.com/groups/sampviet.net/">Bấm vào dây để vào Group</a>
+        <br><br>
+        <a href="https://www.facebook.com%22%3E/<img src="http://webcoban.vn/image/sumo.jpg"></a>
+    </body>
+</html>
+
+
+
+<div style="width:300px; margin-left: auto; margin-right: auto; margin-bottom: auto;">
+  <widgetbot server="1130500023059226756" channel="1209077055879127080" width="310" height="500" style="display: inline-block; overflow: hidden; background-color: rgb(54, 57, 62); border-radius: 1px; vertical-align: top; width: 350px; height: 500px;"><iframe title="WidgetBot Discord chat embed" allow="clipboard-write; fullscreen" src="https://e.widgetbot.io/channels/1130500023059226756/1208692971793424426" style="border: none; width: 100%; height: 100%;"></iframe></widgetbot> 
+</div>
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    var pictureSrc = 
+        "http://3.bp.blogspot.com/-Te-t2fE8zBY/UFmgIXY063I/AAAAAAAAEYc/P5OT_IQhqPQ/s1600/Leaf5.png";
+   
+    var pictureWidth = 15; //the width of the snowflakes
+    var pictureHeight = 15; //the height of the snowflakes
+    var numFlakes = 3; //the number of snowflakes
+    var downSpeed = 0.01; //the falling speed of snowflakes (portion of screen per 100 ms)
+    var lrFlakes = 10; //the speed that the snowflakes should swing from side to side
+
+    if (typeof (numFlakes) != 'number' ||
+        Math.round(numFlakes) !=
+        numFlakes || numFlakes < 1) {
+        numFlakes = 10;
+    }
+
+    //draw the snowflakes
+    for (var x = 0; x < numFlakes; x++) {
+        if (document.layers) { //releave NS4 bug
+            document.write(
+                '<layer id="snFlkDiv' +
+                x + '"><imgsrc="' +
+                pictureSrc +
+                '" height="' +
+                pictureHeight +
+                '"width="' +
+                pictureWidth +
+                '" alt="*" border="0"></layer>'
+            );
+        } else {
+            document.write(
+                '<div style="position:absolute; z-index:9999;"id="snFlkDiv' +
+                x + '"><img src="' +
+                pictureSrc +
+                '"height="' +
+                pictureHeight +
+                '" width="' +
+                pictureWidth +
+                '" alt="*"border="0"></div>'
+            );
+        }
+    }
+
+ //calculate initial positions (in portions of browser window size)
+ var xcoords = new Array(),
+        ycoords = new Array(),
+        snFlkTemp;
+    for (var x = 0; x < numFlakes; x++) {
+        xcoords[x] = (x + 1) / (
+            numFlakes + 1);
+        do {
+            snFlkTemp = Math.round((
+                    numFlakes - 1) *
+                Math.random());
+        } while (typeof (ycoords[
+                snFlkTemp]) == 'number');
+        ycoords[snFlkTemp] = x /
+            numFlakes;
+    }
+
+    //now animate
+    function flakeFall() {
+        if (!getRefToDivNest(
+                'snFlkDiv0')) {
+            return;
+        }
+        var scrWidth = 0,
+            scrHeight = 0,
+            scrollHeight = 0,
+            scrollWidth = 0;
+        //find screen settings for all variations. doing this every time allows for resizing and scrolling
+        if (typeof (window.innerWidth) ==
+            'number') {
+            scrWidth = window.innerWidth;
+            scrHeight = window.innerHeight;
+        } else {
+            if (document.documentElement &&
+                (document.documentElement
+                    .clientWidth ||
+                    document.documentElement
+                    .clientHeight)) {
+                scrWidth = document
+                    .documentElement
+                    .clientWidth;
+                scrHeight =
+                    document.documentElement
+                    .clientHeight;
+            } else {
+                if (document.body &&
+                    (document.body.clientWidth ||
+                        document.body
+                        .clientHeight
+                    )) {
+                    scrWidth =
+                        document.body
+                        .clientWidth;
+                    scrHeight =
+                        document.body
+                        .clientHeight;
+                }
+            }
+        }
+        if (typeof (window.pageYOffset) ==
+            'number') {
+            scrollHeight =
+                pageYOffset;
+            scrollWidth =
+                pageXOffset;
+        } else {
+            if (document.body && (
+                    document.body.scrollLeft ||
+                    document.body.scrollTop
+                )) {
+                scrollHeight =
+                    document.body.scrollTop;
+                scrollWidth =
+                    document.body.scrollLeft;
+            } else {
+                if (document.documentElement &&
+                    (document.documentElement
+                        .scrollLeft ||
+                        document.documentElement
+                        .scrollTop)
+                ) {
+                    scrollHeight =
+                        document.documentElement
+                        .scrollTop;
+                    scrollWidth =
+                        document.documentElement
+                        .scrollLeft;
+                }
+            }
+        }
+        //move the snowflakes to their new position
+        for (var x = 0; x <
+            numFlakes; x++) {
+            if (ycoords[x] *
+                scrHeight >
+                scrHeight -
+                pictureHeight) {
+                ycoords[x] = 0;
+            }
+            var divRef =
+                getRefToDivNest(
+                    'snFlkDiv' + x);
+            if (!divRef) {
+                return;
+            }
+            if (divRef.style) {
+                divRef = divRef.style;
+            }
+            var oPix = document.childNodes ?
+                'px' : 0;
+            divRef.top = (Math.round(
+                        ycoords[x] *
+                        scrHeight) +
+                    scrollHeight) +
+                oPix;
+            divRef.left = (Math.round(
+                    ((xcoords[x] *
+                        scrWidth
+                    ) - (
+                        pictureWidth /
+                        2)) + (
+                        (
+                            scrWidth /
+                            ((
+                                    numFlakes +
+                                    1
+                                ) *
+                                4
+                            )) *
+                        (Math.sin(
+                                lrFlakes *
+                                ycoords[
+                                    x
+                                    ]
+                            ) -
+                            Math
+                            .sin(
+                                3 *
+                                lrFlakes *
+                                ycoords[
+                                    x
+                                    ]
+                            )))
+                ) + scrollWidth) +
+                oPix;
+            ycoords[x] += downSpeed;
+        }
+    }
+
+    //DHTML handlers
+    function getRefToDivNest(divName) {
+        if (document.layers) {
+            return document.layers[
+                divName];
+        } //NS4
+        if (document[divName]) {
+            return document[divName];
+        } //NS4 also
+        if (document.getElementById) {
+            return document.getElementById(
+                divName);
+        } //DOM (IE5+, NS6+, Mozilla0.9+, Opera)
+        if (document.all) {
+            return document.all[
+                divName];
+        } //Proprietary DOM - IE4
+        return false;
+    }
+
+    window.setInterval('flakeFall();',
+        100);
+    //]]>
+
+</script><div style="position: absolute; z-index: 9999; top: 371px; left: 230px;" id="snFlkDiv0"><img src="http://3.bp.blogspot.com/-Te-t2fE8zBY/UFmgIXY063I/AAAAAAAAEYc/P5OT_IQhqPQ/s1600/Leaf5.png" height="15" width="15" alt="*" border="0"></div><div style="position: absolute; z-index: 9999; top: 575px; left: 405px;" id="snFlkDiv1"><img src="http://3.bp.blogspot.com/-Te-t2fE8zBY/UFmgIXY063I/AAAAAAAAEYc/P5OT_IQhqPQ/s1600/Leaf5.png" height="15" width="15" alt="*" border="0"></div><div style="position: absolute; z-index: 9999; top: 179px; left: 607px;" id="snFlkDiv2"><img src="http://3.bp.blogspot.com/-Te-t2fE8zBY/UFmgIXY063I/AAAAAAAAEYc/P5OT_IQhqPQ/s1600/Leaf5.png" height="15" width="15" alt="*" border="0"></div>
+
+
+
+<html>
+    <title>Xem ví dụ</title>
+    <style type="text/css">
+        #test{
+            padding:30px;
+            font-size:20px;
+            position:fixed;
+            bottom: -10px;
+            left:10px;
+        }
+    </style>
+<body>
+    <div id="test">SAMPVIET.NET Hân Hạnh Được Phục Vụ Quý Khách !!</div>
+</body>
+</html>
+
+<style type="text/css">
+    body {
+        background: url(https://media.discordapp.net/attachments/1200087003992162365/1217813156567580712/background_gta.png?ex=660563e2&is=65f2eee2&hm=503c1520064a75a97ac1789296f252fa69ba3081b391e86c97e7e78f3086b091&=&format=webp&quality=lossless&width=687&height=327) no-repeat !important;
+        background-size: cover !important;
+        background-attachment: fixed !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        overflow-y: scroll !important;
+    }

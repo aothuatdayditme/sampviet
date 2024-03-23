@@ -1,0 +1,14 @@
+<body>
+</p>IP server và port là: </q>
+<center></center>
+<abbr>sampviet.net:7777</abbr>
+<button onclick="copy('sampviet.net')">Copy IP server</button>
+<script>
+function copy(text) {
+document.body.insertAdjacentHTML("beforeend","<div id=\"copy\" contenteditable>"+text+"</div>")
+document.getElementById("copy").focus();
+document.execCommand("selectAll");
+document.execCommand("copy");
+document.getElementById("copy").remove();
+}
+</script>

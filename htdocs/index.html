@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--cấu trúc JS-->
+            <!--Poppins for titles-->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+            <!--Poppins for paragraph-->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+            <!--Linking the CSS-->
+                <link href="style.css" rel="stylesheet">
+            <!--Title-->
+                <title>SAMPVIET.NET | Community</title>
+                <meta name="description" content="SAMPVIET.NET | Community" />
+            <!--Favicon-->
+                <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/1131139621531688981/1213135497757720676/received_434651052232815.jpg?ex=65fd99f9&is=65eb24f9&hm=2bfb1fa652d1db7a5343046324237f5d2213a22acb86dc8303e2a591067319c9&=&format=webp&width=662&height=662">
+    </head>
+</html>
+<script type="text/javascript">
+    //<![CDATA[
+    var pictureSrc = 
+        "http://3.bp.blogspot.com/-Te-t2fE8zBY/UFmgIXY063I/AAAAAAAAEYc/P5OT_IQhqPQ/s1600/Leaf5.png";
+   
+    var pictureWidth = 15; //the width of the snowflakes
+    var pictureHeight = 15; //the height of the snowflakes
+    var numFlakes = 3; //the number of snowflakes
+    var downSpeed = 0.01; //the falling speed of snowflakes (portion of screen per 100 ms)
+    var lrFlakes = 10; //the speed that the snowflakes should swing from side to side
+
+    if (typeof (numFlakes) != 'number' ||
+        Math.round(numFlakes) !=
+        numFlakes || numFlakes < 1) {
+        numFlakes = 10;
+    }
+
+    //draw the snowflakes
+    for (var x = 0; x < numFlakes; x++) {
+        if (document.layers) { //releave NS4 bug
+            document.write(
+                '<layer id="snFlkDiv' +
+                x + '"><imgsrc="' +
+                pictureSrc +
+                '" height="' +
+                pictureHeight +
+                '"width="' +
+                pictureWidth +
+                '" alt="*" border="0"></layer>'
+            );
+        } else {
+            document.write(
+                '<div style="position:absolute; z-index:9999;"id="snFlkDiv' +
+                x + '"><img src="' +
+                pictureSrc +
+                '"height="' +
+                pictureHeight +
+                '" width="' +
+                pictureWidth +
+                '" alt="*"border="0"></div>'
+            );
+        }
+    }
+
+ //calculate initial positions (in portions of browser window size)
+ var xcoords = new Array(),
+        ycoords = new Array(),
+        snFlkTemp;
+    for (var x = 0; x < numFlakes; x++) {
+        xcoords[x] = (x + 1) / (
+            numFlakes + 1);
+        do {
+            snFlkTemp = Math.round((
+                    numFlakes - 1) *
+                Math.random());
+        } while (typeof (ycoords[
+                snFlkTemp]) == 'number');
+        ycoords[snFlkTemp] = x /
+            numFlakes;
+    }
+
+    //now animate
+    function flakeFall() {
+        if (!getRefToDivNest(
+                'snFlkDiv0')) {
+            return;
+        }
+        var scrWidth = 0,
+            scrHeight = 0,
+            scrollHeight = 0,
+            scrollWidth = 0;
+        //find screen settings for all variations. doing this every time allows for resizing and scrolling
+        if (typeof (window.innerWidth) ==
+            'number') {
+            scrWidth = window.innerWidth;
+            scrHeight = window.innerHeight;
+        } else {
+            if (document.documentElement &&
+                (document.documentElement
+                    .clientWidth ||
+                    document.documentElement
+                    .clientHeight)) {
+                scrWidth = document
+                    .documentElement
+                    .clientWidth;
+                scrHeight =
+                    document.documentElement
+                    .clientHeight;
+            } else {
+                if (document.body &&
+                    (document.body.clientWidth ||
+                        document.body
+                        .clientHeight
+                    )) {
+                    scrWidth =
+                        document.body
+                        .clientWidth;
+                    scrHeight =
+                        document.body
+                        .clientHeight;
+                }
+            }
+        }
+        if (typeof (window.pageYOffset) ==
+            'number') {
+            scrollHeight =
+                pageYOffset;
+            scrollWidth =
+                pageXOffset;
+        } else {
+            if (document.body && (
+                    document.body.scrollLeft ||
+                    document.body.scrollTop
+                )) {
+                scrollHeight =
+                    document.body.scrollTop;
+                scrollWidth =
+                    document.body.scrollLeft;
+            } else {
+                if (document.documentElement &&
+                    (document.documentElement
+                        .scrollLeft ||
+                        document.documentElement
+                        .scrollTop)
+                ) {
+                    scrollHeight =
+                        document.documentElement
+                        .scrollTop;
+                    scrollWidth =
+                        document.documentElement
+                        .scrollLeft;
+                }
+            }
+        }
+        //move the snowflakes to their new position
+        for (var x = 0; x <
+            numFlakes; x++) {
+            if (ycoords[x] *
+                scrHeight >
+                scrHeight -
+                pictureHeight) {
+                ycoords[x] = 0;
+            }
+            var divRef =
+                getRefToDivNest(
+                    'snFlkDiv' + x);
+            if (!divRef) {
+                return;
+            }
+            if (divRef.style) {
+                divRef = divRef.style;
+            }
+            var oPix = document.childNodes ?
+                'px' : 0;
+            divRef.top = (Math.round(
+                        ycoords[x] *
+                        scrHeight) +
+                    scrollHeight) +
+                oPix;
+            divRef.left = (Math.round(
+                    ((xcoords[x] *
+                        scrWidth
+                    ) - (
+                        pictureWidth /
+                        2)) + (
+                        (
+                            scrWidth /
+                            ((
+                                    numFlakes +
+                                    1
+                                ) *
+                                4
+                            )) *
+                        (Math.sin(
+                                lrFlakes *
+                                ycoords[
+                                    x
+                                    ]
+                            ) -
+                            Math
+                            .sin(
+                                3 *
+                                lrFlakes *
+                                ycoords[
+                                    x
+                                    ]
+                            )))
+                ) + scrollWidth) +
+                oPix;
+            ycoords[x] += downSpeed;
+        }
+    }
+
+    //DHTML handlers
+    function getRefToDivNest(divName) {
+        if (document.layers) {
+            return document.layers[
+                divName];
+        } //NS4
+        if (document[divName]) {
+            return document[divName];
+        } //NS4 also
+        if (document.getElementById) {
+            return document.getElementById(
+                divName);
+        } //DOM (IE5+, NS6+, Mozilla0.9+, Opera)
+        if (document.all) {
+            return document.all[
+                divName];
+        } //Proprietary DOM - IE4
+        return false;
+    }
+
+    window.setInterval('flakeFall();',
+        100);
+    //]]> </script>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Test SAMPVIET</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+</head>
+<body>
+  <div class="box-menu">
+   <ul>
+    <li class="/"><a href=""><i class="fa fa-info-circle" aria-hidden="true"></i> thông Tin</a>
+        <div class="box-submenu">
+            <ul>
+                <li><a href="https://dsc.gg/sampviet">Discord</a></li>
+                <li><a href="./danh-sach/thong-tin/info.html">Thông Tin Máy Chủ</a></li>
+            </ul>
+         </div>   
+    </li>
+    <li><a href="./danh-sach/download.html"><i class="fa fa-gamepad" aria-hidden="true"></i> Tải Game</a></li>
+    <li><a href="./danh-sach/fanpage.html"><i class="fa fa-facebook-official"></i> Fanpage</a></li>
+    <li><a href="./danh-sach/group.html"><i class="fa fa-user"></i> Group</a></li>
+    <li><a href="./danh-sach/youtube.html"><i class="fa fa-youtube-play"></i> Youtube</a></li>
+    <li><a href="./danh-sach/ip.html"><i class="fa fa-server"></i> IP máy chủ</a></li>
+    <li><a href="/"><i class="fa fa-phone" aria-hidden="true"></i> Liên Hệ</a>
+         <div class="box-submenu">
+            <ul>
+                <li><a href="https://facebook.com/boezmusic2000">Nguyễn Nhật Minh</a></li>
+                <li><a href="https://facebook.com/phihung101">Nguyễn Phi Hùng</a></li>
+            </ul>
+         </div>   
+    </li>
+   </ul>
+</div>
+</div>
+</body>
+<div class="row">  
+   <div class="col-md-12">
+     <div style="border-radius: 20px; padding: 2px; border: 2px solid #ff13ff; word-wrap: break-word;">
+       <marquee behavior="scroll" direction="left" scrollamount="5">            
+         <font color="white">
+           SAMPVIET.NET đang có dự định Offline server 1 tháng vì thiếu kinh phí để chạy server ai có ý kiến gì xin hãy góp ý tại discord server xin cảm ơn.              </font>
+       </marquee>
+     </div>
+   </div>
+</html>
+<menu></menu>
